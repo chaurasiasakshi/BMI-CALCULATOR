@@ -10,20 +10,21 @@
 </head>
 <body>
     <div class="container mt-5  border w-25">
-        <p class="mt-5">Height in CM :</p>
-        <input type="text" class="w-100" id="height">
-        <br>
-        <span id="height_error"></span>
-
-        <p class="mt-3">Weight in CM :</p>
-        <input type="text" class="w-100" id="weight">
-        <br>
-        <span id="weight_error"></span>
-
-        <button id="btn" onclick="click()" class="mt-3  btn btn-success btn-lg btn-block">Calculate BMI</button>
        
-       
-        <p id="output"></p>
+
+    <h2 class="mt-3 text-center">BMI Calculator</h2>
+    <form id="bmiForm">
+        <label for="height">Height (cm):</label><br>
+        <input type="number" class="w-100" id="height" name="height" placeholder="Enter your height in cm" required><br>
+
+        <label for="weight">Weight (kg):</label><br>
+        <input type="number" class="w-100" id="weight" name="weight" placeholder="Enter your weight in kg" required><br>
+
+        <input type="submit" class="btn btn-success btn-block mt-3" value="Calculate BMI">
+    </form>
+
+    <div id="result"></div>
+
 
 
     </div>
